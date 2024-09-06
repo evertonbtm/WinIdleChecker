@@ -69,14 +69,13 @@ public class WinIdleService extends Thread {
 
                 idle = false;
                 String state = "active";
-                System.out.println("machine active");
+                //System.out.println("machine active");
 
                 if (compareScreens(screenShot, screenShot2) < threshHold) {
                     idle = true;
                     state = "idle";
-                    System.out.println("machine idle");
+                    //System.out.println("machine idle");
                 }
-
 
                 try {
                     messageService.publish(state);

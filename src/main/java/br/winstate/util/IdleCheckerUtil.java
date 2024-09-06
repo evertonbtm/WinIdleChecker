@@ -14,7 +14,7 @@ public class IdleCheckerUtil {
     public IdleCheckerUtil(){
         activeTime = Integer.parseInt(config().getProperty("activeTime","20000"));
         idleTime = Integer.parseInt(config().getProperty("idleTime","5000"));
-        threadCheckTime = Integer.parseInt(config().getProperty("threadCheckTime", "2000"));
+        threadCheckTime = Integer.parseInt(config().getProperty("threadCheckTime", "5000"));
     }
 
     public Properties config(){
