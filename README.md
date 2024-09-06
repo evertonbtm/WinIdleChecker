@@ -1,2 +1,2 @@
 # WinIdleChecker
-Simple windows  idle chcker using kafka 
+Sample kafka windows idle checker, just for study
